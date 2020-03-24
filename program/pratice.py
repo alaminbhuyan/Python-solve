@@ -65,4 +65,3 @@
 #     query_scores = student_marks[query_name]
 #     print("{0:.2f}".format(sum(query_scores)/(len(query_scores))))
 
-print('kere')
