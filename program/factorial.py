@@ -22,4 +22,3 @@ def fun(num):
 
 print('The factorial number is : ',fun(int(input('Enter your number: '))))
 
-fun(3)
