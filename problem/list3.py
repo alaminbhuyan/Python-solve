@@ -1,35 +1,26 @@
-# n = int(input())
-# lis = []
-# for i in range(n):
-#     data = input().split()
-#     #if data[0] != "print" or data[0] != "pop" or data[0] != "sort" or data[0] != "reverse":
-#     pos = int(data[1])
-#     value = int(data[2])
-#     if data[0] == "insert":
-#         lis.insert(pos,value)
-#     if data[0] == "print":
-#         print(lis)
-#     if data[0]== "remove":
-#         lis.remove(value)
-#     if data[0]== "append":
-#         lis.append(value)
-#     if data[0]== "sort":
-#         lis.sort()
-#     if data[0]== "pop":
-#         lis.pop()
-#     if data[0]== "reverse":
-#         lis.reverse()
-
 lis = []
-for _ in range(6):
+condition1 = "insert"
+condition2 = "append"
+condition3 = "pop"
+condition4 = "sort"
+condition5 = "print"
+condition6 = "reverse"
+condition7 = "remove"
+n = int(input())
+for i in range(n):
+    l = input().split()
 
-    data = input('enter value: ').split()
-    if data[0] != "print" or  "remove":
-        pos = int(data[1])
-        value = int(data[2])
-    if data[0] == "remove":
-        value = int(data[1])
-    if data[0]=="insert":
-        lis.insert(pos,value)
-    if data[0]=="print":
+    if l[0]==condition1:
+        lis.insert(int(l[1]),int(l[2]))
+    elif l[0]==condition2:
+        lis.append(int(l[1]))
+    elif l[0]==condition3:
+        lis.pop()
+    elif l[0]==condition4:
+        lis.sort()
+    elif l[0]==condition5:
         print(lis)
+    elif l[0]==condition6:
+        lis.reverse()
+    elif l[0]==condition7:
+        lis.remove(int(l[1]))
