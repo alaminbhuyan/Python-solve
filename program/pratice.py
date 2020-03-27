@@ -23,3 +23,8 @@
 # obj1.display()
 # obj2 = myClass('alamin',22)
 # obj2.display()
+
+
+data = input().split()
+print(data)
+print(data[0])
