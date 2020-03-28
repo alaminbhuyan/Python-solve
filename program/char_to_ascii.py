@@ -14,3 +14,13 @@ for i in ascii_uppercase:
 
 print('')
 print(ascii_letters)
+
+print(ascii_lowercase)
+print(ascii_uppercase)
+
+txt = "AlaMin BhUyAn"
+for i in txt:
+    if i in ascii_lowercase:
+        print(i.upper(),end="")
+    else:
+        print(i.lower(),end="")
