@@ -12,13 +12,3 @@
 # print(obj1(obj2(4)))
 from primePy import primes
 
-print(primes.check(5))
-print(primes.check(10))
-print(primes.factor(15))
-print(primes.factors(15))
-print(primes.first(15))
-print(primes.upto(15))
-print(primes.between(50,100))
-print(primes.phi(15))
-print(primes.sqrt(5))
-print(primes.about())
