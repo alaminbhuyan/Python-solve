@@ -10,18 +10,8 @@
 # print(obj1(2))
 # print(obj2(3))
 # print(obj1(obj2(4)))
+#o = 0
 
+lis = [-1]
 
-def div(n1,n2):
-    try:
-        result = n1/n2
-    except ZeroDivisionError:
-        print('Oops zero not divide any number.please try again any valid number')
-    else:
-        print(result)
-    finally:
-        print('your work is done. Best of luck!!!')
-
-a,b = map(int,input().split())
-div(a,b)
-
+print(len(lis))
