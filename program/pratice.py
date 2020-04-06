@@ -12,5 +12,8 @@
 # print(obj1(obj2(4)))
 #o = 0
 
-a = 5.5
-print(round(a))
+n = int(input())
+s = set()
+for i in range(n):
+    s.add(input())
+print(len(s))
