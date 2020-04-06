@@ -12,6 +12,5 @@
 # print(obj1(obj2(4)))
 #o = 0
 
-lis = [-1]
-
-print(len(lis))
+a = 5.5
+print(round(a))
