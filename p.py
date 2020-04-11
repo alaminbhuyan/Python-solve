@@ -1,11 +1,16 @@
-# def Sort(sub_li):
-#     sub_li.sort(key=lambda x: x[1])
-#     return sub_li
-# sub_li = [[1, 10], [2, 5], [3, 20], [4, 15]]
-# print(Sort(sub_li))
+from fractions import *
+from functools import reduce
 
-sub_li = [[1, 10], [5, 5], [3, 20], [4, 15],[2,3]]
+#def product(fracs):
 
-sub_li.sort(key=lambda  x:x[1])
+if __name__ == '__main__':
+    fracs = [[1,2],[3,4],[5,6]]
+    # for _ in range(int(input())):
+    #     fracs.append(Fraction(*map(int, input().split())))
+    # result = product(fracs)
+    # result = fracs
+    # print(result)
+    # print(*result)
+    frac = Fraction(*map(fracs))
+    print(frac[0])
 
-print(sub_li)

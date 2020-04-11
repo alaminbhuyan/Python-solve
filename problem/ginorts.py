@@ -22,4 +22,5 @@
 #         b3 = b3+i
 # letter = b3+b2
 # print(letter+dig)
-print(*(sorted(input(), key=lambda x: (x.isdigit(), x.isdigit() and int(x)%2==0, x.isupper(), x.islower(), x))), sep='')
+
+print(*(sorted(input(), key=lambda x: (x.isdigit(),x.isdigit() and int(x)%2==0,x.isupper(),x.islower(),x))),sep='')
