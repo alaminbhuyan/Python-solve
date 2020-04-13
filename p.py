@@ -13,11 +13,7 @@
 #     # print(*result)
 #     frac = Fraction(*map(fracs))
 #     print(frac[0])
-from collections import OrderedDict
-d = OrderedDict()
-for _ in range(int(input())):
-    items, quantity = input().split()
-    d[items] = d.get(items,0)+int(quantity)
-
-for items,quantity in d.items():
-    print(items,quantity)
+from itertools import combinations_with_replacement
+l = [1,2,3]
+for i in combinations_with_replacement(l,3):
+    print(i)
