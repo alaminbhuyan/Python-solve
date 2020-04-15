@@ -13,7 +13,14 @@
 #     # print(*result)
 #     frac = Fraction(*map(fracs))
 #     print(frac[0])
-from itertools import combinations_with_replacement
-l = [1,2,3]
-for i in combinations_with_replacement(l,3):
-    print(i)
+
+for t in range(int(input())):
+    input()
+    lst = [int(i) for i in input().split()]
+    min_list = lst.index(min(lst))
+    left = lst[:min_list]
+    right = lst[min_list+1:]
+    if left == sorted(left,reverse=True) and right == sorted(right):
+        print("Yes")
+    else:
+        print("No")
