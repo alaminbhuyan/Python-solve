@@ -1,26 +1,23 @@
-# from fractions import *
-# from functools import reduce
-#
-# #def product(fracs):
-#
-# if __name__ == '__main__':
-#     fracs = [[1,2],[3,4],[5,6]]
-#     # for _ in range(int(input())):
-#     #     fracs.append(Fraction(*map(int, input().split())))
-#     # result = product(fracs)
-#     # result = fracs
-#     # print(result)
-#     # print(*result)
-#     frac = Fraction(*map(fracs))
-#     print(frac[0])
 
-for t in range(int(input())):
-    input()
-    lst = [int(i) for i in input().split()]
-    min_list = lst.index(min(lst))
-    left = lst[:min_list]
-    right = lst[min_list+1:]
-    if left == sorted(left,reverse=True) and right == sorted(right):
-        print("Yes")
+# sokale bojte hove alamin
+# a,b = map(int,input().split())
+# x = list(map(int,input().split()))
+# y = list(map(int,input().split()))
+# z = list(map(int,input().split()))
+# find = [[[(i,j,k) for k in z] for j in y] for i in x]
+# print(find)
+
+import re
+
+for _ in range(int(input())):
+    u = ''.join(sorted(input()))
+    try:
+        assert re.search(r'[A-Z]{2}', u)
+        assert re.search(r'\d\d\d', u)
+        assert not re.search(r'[^a-zA-Z0-9]', u)
+        assert not re.search(r'(.)\1', u)
+        assert len(u) == 10
+    except:
+        print('Invalid')
     else:
-        print("No")
+        print('Valid')
