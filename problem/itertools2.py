@@ -14,7 +14,9 @@ string , value = input().upper().split()
 value= int(value)
 #print(list(permutations(string,value)))
 lis = list(permutations(string,value))
+print(lis)
 lis.sort()
+print(lis)
 for i in lis:
     for j in i:
         print(j,end='')
