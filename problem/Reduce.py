@@ -1,7 +1,15 @@
 
+
+import operator
 # from functools import reduce
-# from fractions import gcd
-#
+# def product(fracs):
+#     t = reduce(operator.mul , fracs) # complete this line with a reduce statement
+#     return t.numerator, t.denominator
+
+
+from functools import reduce
+from fractions import *
+
 # n = int(input())
 # rationals = []
 # for i in range(n):
@@ -14,20 +22,17 @@
 #     k[i] //= c
 # print(*k)
 
-from functools import reduce
-from fractions import *
-rational = []
-for i in range(int(input())):
-    rational.append(list(map(int,input().split())))
-print(rational)
-lis = [[row[i] for row in rational] for i in range(2)]
+# this is my logic
+
+n = int(input())
+lis = [list(map(int,input().split())) for _ in range(n)]
 print(lis)
-#l = [list(a) for a in zip(*rational)]
+lis2 = list(zip(*lis))
+print(lis2)
+k = [reduce(lambda x , y : x*y,lis2[i]) for i in range(2)]
 
-x = [reduce(lambda a,b:a*b,lis[i]) for i in range(2)]
-y = Fraction(x[0],x[1])
-m,n = y.numerator,y.denominator
-print(m,n)
-
-
-
+print(k)
+#x = Fraction(k[0],k[1]) # this also work
+print(*k)
+x = Fraction(*k)
+print(x.numerator,x.denominator)
