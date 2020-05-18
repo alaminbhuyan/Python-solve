@@ -1,3 +1,4 @@
+
 from collections import OrderedDict
 d = OrderedDict()
 for _ in range(int(input())):

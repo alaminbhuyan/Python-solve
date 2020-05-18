@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # from fractions import *
 # from functools import reduce
 #
@@ -29,4 +30,9 @@ while True:
         print("You are won")
     else:
         print("You are loss")
+=======
+>>>>>>> 842acb36659ab60b9ab066d40f851b392b159bee
 
+print(abs(1.5446))
+print(int(1.45456))
+print(round(1.4566))
