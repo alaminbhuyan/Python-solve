@@ -13,13 +13,20 @@
 #     # print(*result)
 #     frac = Fraction(*map(fracs))
 #     print(frac[0])
-from collections import OrderedDict
-d = OrderedDict()
-for _ in range(int(input())):
-    item, space, quantity = input().rpartition(' ')
-    d[item] = d.get(item, 0) + int(quantity)
-for item, quantity in d.items():
-     print(item, quantity)
+# from collections import OrderedDict
+# d = OrderedDict()
+# for _ in range(int(input())):
+#     item, space, quantity = input().rpartition(' ')
+#     d[item] = d.get(item, 0) + int(quantity)
+# for item, quantity in d.items():
+#      print(item, quantity)
 
-
+import random
+while True:
+    num = int(input("enter your number: "))
+    num2 = random.randrange(20)
+    if num==num2:
+        print("You are won")
+    else:
+        print("You are loss")
 
