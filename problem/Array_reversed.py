@@ -10,4 +10,4 @@ result = arrays(arr)
 print(result)
 
 
-#arr = array(list(map(int,input().split())), dtype=float)
+#arry = array(list(map(int,input().split())), dtype=float)

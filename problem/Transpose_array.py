@@ -5,10 +5,10 @@ from numpy import *
 # row = list(map(int,input().split()))[:n]
 # column = list(map(int,input().split()))[:m]
 #
-# arr = array([row,column])
+# arry = array([row,column])
 #
-# print(arr.transpose())
-# print(arr.flatten())
+# print(arry.transpose())
+# print(arry.flatten())
 
 n, m = map(int, input().split())
 arr = array([input().strip().split() for _ in range(n)], int)

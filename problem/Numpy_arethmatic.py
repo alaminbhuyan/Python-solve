@@ -5,7 +5,7 @@ row , col = map(int,input().split())
 a = np.array([list(map(int,input().split()))[:col] for _ in range(row)],dtype=int)
 b = np.array([list(map(int,input().split()))[:col] for _ in range(row)],dtype=int)
 
-print(np.add(a,b))
+print(np.add_towNumber(a, b))
 print(np.subtract(a,b))
 print(np.multiply(a,b))
 print(np.array(np.divide(a,b),int))
